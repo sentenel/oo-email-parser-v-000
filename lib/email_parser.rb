@@ -1,3 +1,5 @@
+require 'pry'
+
 def EmailParser
   attr_accessor :emails
 
@@ -6,6 +8,7 @@ def EmailParser
   end
 
   def parse
+    binding.pry
     emails.split(", ").split(" ")
   end
 
