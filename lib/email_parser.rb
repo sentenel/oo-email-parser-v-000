@@ -9,7 +9,7 @@ class EmailParser
 
   def parse
     binding.pry
-    emails.split(", ").split(" ")
+    emails.gsub(", ", " ").split
   end
 
 end
