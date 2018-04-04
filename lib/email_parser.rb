@@ -8,8 +8,7 @@ class EmailParser
   end
 
   def parse
-    binding.pry
-    emails.gsub(", ", " ").split
+    emails.gsub(", ", " ").split.uniq
   end
 
 end
